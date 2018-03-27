@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inhereit;
+}
+
+html {
+  // Default font size is 16px by the browser, in order to keep our 10px default size we grab a % value of 16 to give us 10px
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}

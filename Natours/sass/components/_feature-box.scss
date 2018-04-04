@@ -8,6 +8,11 @@
   transition: all .3s;
   height: 28rem;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+    height: 20rem;
+  }
+
   &__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -16,6 +21,10 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+    @include respond(tab-port) {
+      padding: 0;
+    }
   }
 
   &:hover {

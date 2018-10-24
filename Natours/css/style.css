@@ -29,6 +29,7 @@ body {
     url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
+  position: relative;
 
   /* 
   clip-path adds the cropping effect starting top left corner moving clock wise
@@ -37,4 +38,27 @@ body {
   for more information there is a tool call clippy
   */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+
+}
+
+.heading-primary-sub {
+
 }

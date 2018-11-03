@@ -1,0 +1,62 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    /* Removes default blue and underline look from a link */
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    font-size: 1.6rem;
+
+    position: relative;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-gray-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &::after {
+    /* content and display properties need to define or else the element wont show at all */
+    content: "";
+    display: inline-block;
+    /* Here we are making the pseudo element to be indentical the button */
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    /* This will make the element to be right behind the button */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    /* This will apply the values that the animation has at the start, so the button doesnt show at first */
+    animation-fill-mode: backwards;
+  }
+}

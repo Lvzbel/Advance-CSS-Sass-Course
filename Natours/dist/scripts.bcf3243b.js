@@ -171,16 +171,23 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"icons/icon-font.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\img\\hero.jpg":[["hero.3ad8264a.jpg","img/hero.jpg"],"img/hero.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scripts/index.js":[function(require,module,exports) {
+},{"./fonts/linea-basic-10.eot":[["linea-basic-10.7e6387c6.eot","icons/fonts/linea-basic-10.eot"],"icons/fonts/linea-basic-10.eot"],"./fonts/linea-basic-10.woff":[["linea-basic-10.8dd11d63.woff","icons/fonts/linea-basic-10.woff"],"icons/fonts/linea-basic-10.woff"],"./fonts/linea-basic-10.ttf":[["linea-basic-10.4c4028bc.ttf","icons/fonts/linea-basic-10.ttf"],"icons/fonts/linea-basic-10.ttf"],"./fonts/linea-basic-10.svg":[["linea-basic-10.f4b817de.svg","icons/fonts/linea-basic-10.svg"],"icons/fonts/linea-basic-10.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"sass/main.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../img/hero.jpg":[["hero.3ad8264a.jpg","img/hero.jpg"],"img/hero.jpg"],"./../img/nat-4.jpg":[["nat-4.e9f66017.jpg","img/nat-4.jpg"],"img/nat-4.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scripts/index.js":[function(require,module,exports) {
 "use strict";
 
+require("../icons/icon-font.css");
+
 require("../sass/main.scss");
-},{"../sass/main.scss":"sass/main.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../icons/icon-font.css":"icons/icon-font.css","../sass/main.scss":"sass/main.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -207,7 +214,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64538" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37749" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

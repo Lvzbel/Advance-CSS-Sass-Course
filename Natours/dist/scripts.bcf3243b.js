@@ -181,7 +181,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../img/hero.jpg":[["hero.3ad8264a.jpg","img/hero.jpg"],"img/hero.jpg"],"./../img/nat-4.jpg":[["nat-4.e9f66017.jpg","img/nat-4.jpg"],"img/nat-4.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scripts/index.js":[function(require,module,exports) {
+},{"./../img/nat-5.jpg":[["nat-5.702c9da2.jpg","img/nat-5.jpg"],"img/nat-5.jpg"],"./../img/nat-6.jpg":[["nat-6.c1e75b1b.jpg","img/nat-6.jpg"],"img/nat-6.jpg"],"./../img/hero.jpg":[["hero.3ad8264a.jpg","img/hero.jpg"],"img/hero.jpg"],"./../img/nat-4.jpg":[["nat-4.e9f66017.jpg","img/nat-4.jpg"],"img/nat-4.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scripts/index.js":[function(require,module,exports) {
 "use strict";
 
 require("../icons/icon-font.css");
@@ -214,7 +214,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37749" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43675" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

@@ -17,7 +17,9 @@
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-      <label for="navi-toggle" class="navigation__button">MENU</label>
+      <label for="navi-toggle" class="navigation__button"
+        ><span class="navigation__icon">&nbsp;</span></label
+      >
 
       <div class="navigation__background">&nbsp;</div>
 
@@ -166,7 +168,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-large">
           <h2 class="heading-secondary">Most Popular tours</h2>
         </div>
@@ -197,7 +199,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -228,7 +230,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -259,7 +261,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -409,51 +411,85 @@
           </div>
         </div>
       </section>
-
-      <footer class="footer">
-        <div class="footer__logo-box">
-          <img
-            src="img/logo-green-2x.png"
-            alt="Full logo"
-            class="footer__logo"
-          />
-        </div>
-        <div class="row">
-          <div class="col-1-of-2">
-            <div class="footer__navigation">
-              <ul class="footer_list">
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Company</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Contact us</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Carrers</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Privacy policy</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Terms</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-1-of-2">
-            <p class="footer__copyright">
-              Build by <a href="#" class="footer__link">Rodrigo Coto</a> for the
-              online course
-              <a href="#" class="footer__link">Advance CSS and SASS</a> &copy;
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
-              beatae velit eveniet sed, qui explicabo vero officiis harum
-              accusantium reprehenderit consequatur veritatis laudantium
-              necessitatibus enim unde nihil, asperiores nemo facere.
-            </p>
-          </div>
-        </div>
-      </footer>
     </main>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer_list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Carrers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Build by <a href="#" class="footer__link">Rodrigo Coto</a> for the
+            online course
+            <a href="#" class="footer__link">Advance CSS and SASS</a> &copy;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
+            beatae velit eveniet sed, qui explicabo vero officiis harum
+            accusantium reprehenderit consequatur veritatis laudantium
+            necessitatibus enim unde nihil, asperiores nemo facere.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour Phto" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start Booking Now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read the terms before booking
+          </h3>
+          <p class="popup__text">
+            A wonderful serenity has taken possession of my entire soul, like
+            these sweet mornings of spring which I enjoy with my whole heart. I
+            am alone, and feel the charm of existence in this spot, which was
+            created for the bliss of souls like mine. I am so happy, my dear
+            friend, so absorbed in the exquisite sense of mere tranquil
+            existence, that I neglect my talents. I should be incapable of
+            drawing a single stroke at the present moment; and yet I feel that I
+            never was a greater artist than now. When, while the lovely valley
+            teems with vapour around me, and the meridian sun strikes the upper
+            surface of the impenetrable foliage of my trees, and but a few stray
+            gleams steal into the inner sanctuary, I throw myself down among the
+            tall grass by the trickling stream; and, as I lie close to the
+            earth, a thousand unknown plants are noticed by me: when I hear the
+            buzz of the little world among the stalks, and grow familiar with
+            the countless indescribable forms of the insects and flies, then I
+            feel the presence of the Almighty, who formed us in his own image,
+            and the breath.
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
 
     <!-- <section class="grid-test">
 
